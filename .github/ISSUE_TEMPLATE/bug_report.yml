@@ -1,0 +1,39 @@
+name: Bug report
+description: Report a reproducible problem in BauPilot Community
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve BauPilot Community.
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser, operating system and device
+      placeholder: "Firefox 140, Windows 11, desktop"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Tell us exactly how to reproduce the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
