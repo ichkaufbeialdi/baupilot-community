@@ -1,5 +1,8 @@
 # BauPilot Community
 
+[![Tests](https://github.com/ichkaufbeialdi/baupilot-community/actions/workflows/test.yml/badge.svg)](https://github.com/ichkaufbeialdi/baupilot-community/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 BauPilot Community is an open-source, mobile-first toolkit for practical construction-site workflows.
 
 The Community edition focuses on simple field workflows that can run locally in the browser without a proprietary backend. It is intended for site managers, foremen, trades and developers who want an adaptable foundation for construction documentation.
@@ -41,6 +44,10 @@ Then open http://localhost:4173/demo/
 ## Repository safety
 
 This public repository is separate from private production deployments. Do not commit production credentials, customer data, project data or private endpoints.
+
+## Maintainer
+
+Primary maintainer: [@ichkaufbeialdi](https://github.com/ichkaufbeialdi)
 
 ## Contributing
 
