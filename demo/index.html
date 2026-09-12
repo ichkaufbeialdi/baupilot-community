@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BauPilot Community</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Open-source field toolkit</p>
+      <h1>BauPilot Community</h1>
+      <p>Local-first construction records. Data stays in this browser unless you export it.</p>
+    </header>
+
+    <section class="card">
+      <form id="record-form">
+        <label>Workflow
+          <select name="type">
+            <option value="daily-report">Daily report</option>
+            <option value="defect">Defect</option>
+            <option value="inspection">Inspection</option>
+            <option value="meeting">Meeting minutes</option>
+          </select>
+        </label>
+        <label>Title <input name="title" required placeholder="e.g. Level 1 corridor inspection"></label>
+        <label>Project <input name="project" placeholder="Project name"></label>
+        <label>Date <input name="date" type="date" required></label>
+        <label>Notes <textarea name="notes" rows="4" placeholder="Observations, actions, responsible trade…"></textarea></label>
+        <button>Add record</button>
+      </form>
+    </section>
+
+    <section class="toolbar">
+      <strong id="summary">0 records</strong>
+      <button id="export-json" class="secondary">Export JSON</button>
+      <button id="export-csv" class="secondary">Export CSV</button>
+    </section>
+
+    <section id="records" class="records" aria-live="polite"></section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
