@@ -1,0 +1,15 @@
+{
+  "name": "baupilot-community",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Open-source, mobile-first construction site workflow toolkit",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test",
+    "dev": "npx --yes serve . -l 4173"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
